@@ -32,7 +32,7 @@ class Card(db.Model):
         return f'<Card {self.id}>'
     
 
-# Assignment #1. Create User table
+# Assignment #1. Create the User table
 
 
 # Launching content page
