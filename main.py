@@ -12,26 +12,25 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app )
 
 #Assignment #1. Create a DB table
+class Card(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(300), nullable=False)
+    subtitle = db.Column(db.String(300), nullable=False)
+    text = db.Column(db.Text, nullable=False)
 
-
-
-
-
-
-
-
-
-
+def __repr__(self):
+        return f'<Card {self.id}>'
 
 # Running the page with content
 @app.route('/')
 def index():
     # Displaying the DB objects
     # Assignment #2. Display the objects from the DB in index.html
+    cards = Card.query.order_by(Card.id).all()
     
 
     return render_template('index.html',
-                           #cards = cards
+                           cards = cards
 
                            )
 
@@ -39,7 +38,7 @@ def index():
 @app.route('/card/<int:id>')
 def card(id):
     # Assignment #2. Display the right card by its id
-    
+    card = Card.query.get(id)
 
     return render_template('card.html', card=card)
 
@@ -57,7 +56,9 @@ def form_create():
         text =  request.form['text']
 
         # Assignment #2. Create a way to store data in the DB
-        
+        card = Card(title=title, subtitle=subtitle, text=text)
+        db.session.add(card)
+        db.session.commit()
 
 
 
@@ -68,4 +69,7 @@ def form_create():
 
 
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()
+
     app.run(debug=True)
