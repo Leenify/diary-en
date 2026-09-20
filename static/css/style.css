@@ -4,11 +4,11 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #0F172A;        /* the colour of the tracker zone */
+    background: #9853ff66;        /* the colour of the tracker zone */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgba(30, 41, 59, 0.4);    /* the colour of the scrollbar */
+    background-color: hsla(264, 40%, 38%, 0.4);    /* the colour of the scrollbar */
     border-radius: 20px;       /* the roundness of the scrollbar */
     border: none;
   }
@@ -22,8 +22,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    background-color: #0F172A;
-    color: #F8FAFC;
+    background-color: #9853ff66;
+    color: #cbf0ca;
 }
 
 h1, h2, p {
@@ -82,9 +82,9 @@ ul {
     width: 350px;
     height: 500px;
     transition: 0.2s;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(137, 161, 247, 0.1);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(137, 161, 247, 0.1);
 
 }
 
@@ -97,7 +97,7 @@ ul {
 }
 
 .card__text {
-    border-top: 1px solid rgba(14, 165, 233, 1);
+    border-top: 1px solid rgb(91, 14, 233);
     width: inherit;
     display: flex;
     padding: 50px 0 20px;
@@ -131,7 +131,7 @@ ul {
 
 .card--creat:hover,
 .card:hover {
-    box-shadow: 0px 4px 10px rgba(14, 165, 233, 1);
+    box-shadow: 0px 4px 10px rgb(94, 14, 233);
 }
 
 .creat-form {
@@ -150,9 +150,9 @@ ul {
     gap: 30px;
     flex-direction: column;
     align-items: center;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(137, 161, 247, 0.1);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(137, 161, 247 , 0.1);
 }
 
 .form__inputs {
@@ -168,11 +168,11 @@ ul {
 }
 
 .form__input {
-    background: #0F172A;
+    background: #9853ff66;
     border-radius: 10px;
     padding: 10px;
     height: 30px;
-    color: #F8FAFC;
+    color: #cbf0ca;
     font: inherit;
     border: none;
     width: 94%;
@@ -183,20 +183,20 @@ ul {
 }
 
 .form__text {
-    background: #0F172A;
+    background: #9853ff66;
     border-radius: 10px;
     padding: 10px;
-    color: #F8FAFC;
+    color: #cbf0ca;
     font: inherit;
     border: none;
     width: 94%;
 }
 
 .form__button {
-    border: 1px solid rgba(14, 165, 233, 1);
-    background: #0F172A;
+    border: 1px solid rgb(91, 14, 233);
+    background: #9853ff66;
     border-radius: 10px;
-    color: rgba(14, 165, 233, 1);
+    color: rgb(91, 14, 233);
     padding: 10px;
     font: inherit;
     width: 200px;
@@ -206,8 +206,8 @@ ul {
 }
 
 .form__button:hover {
-    color: #F8FAFC;
-    background:  rgba(14, 165, 233, 1);
+    color: #e5fff1;
+    background:  rgb(94, 14, 233);
 }
 
 .main {
@@ -215,9 +215,9 @@ ul {
 }
 
 .main__block {
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(137, 161, 247, 0.1);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(82, 117, 244, 0.1);
     padding: 30px 80px;
     display: flex;
     flex-direction: column;
@@ -238,10 +238,10 @@ ul {
 
 .main__link {
     display: block;
-    border: 1px solid rgba(14, 165, 233, 1);
-    background: #0F172A;
+    border: 1px solid rgb(91, 14, 233);
+    background: #9853ff66;
     border-radius: 10px;
-    color: rgba(14, 165, 233, 1);
+    color: rgb(91, 14, 233);
     padding: 15px 10px;
     font: inherit;
     width: 200px;
@@ -251,8 +251,8 @@ ul {
 }
 
 .main__link:hover {
-    color: #F8FAFC;
-    background:  rgba(14, 165, 233, 1);
+    color: #e5fff1;
+    background:  rgb(94, 14, 233);
 }
 
 
@@ -269,9 +269,9 @@ ul {
     gap: 30px;
     flex-direction: column;
     align-items: center;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(82, 117, 244, 0.1);
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(82, 117, 244, 0.1);
 }
 
 
@@ -292,5 +292,5 @@ ul {
 }
 
 .login__link:hover {
-    color: rgba(14, 165, 233, 1);
+    color: rgb(94, 14, 233);
 }
